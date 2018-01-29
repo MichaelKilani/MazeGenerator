@@ -123,8 +123,11 @@ function keyPressed() {
   }
 
   if(currTile == grid[index(rows-1, cols-1)]) {
+    push();
     textSize(50);
-    text("YOU WIN", width/2, height/2)
+    fill(0);
+    text("YOU WIN", width/2 - 100, height/2)
+    pop();
   }
 
 
